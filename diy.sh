@@ -10,11 +10,11 @@
 # See /LICENSE for more information.
 #
 
-rm -rf feeds/packages/lang/golang
-git clone https://github.com/sbwml/packages_lang_golang -b 20.x feeds/packages/lang/golang
-rm -rf feeds/packages/net/v2ray-geodata
-git clone https://github.com/wyhdag/dns -b v5 package/emortal/mosdns
-git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
+# rm -rf feeds/packages/lang/golang
+# git clone https://github.com/sbwml/packages_lang_golang -b 20.x feeds/packages/lang/golang
+# rm -rf feeds/packages/net/v2ray-geodata
+# git clone https://github.com/wyhdag/dns -b v5 package/emortal/mosdns
+# git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 git clone https://github.com/derisamedia/luci-theme-alpha-alk-net.git package/emortal/luci-theme-alpha-alk
 sed -i 's/Os/O2/g' include/target.mk
 sed -i 's/luci-theme-bootstrap/luci-theme-alphaproto/g' feeds/luci/collections/luci/Makefile
