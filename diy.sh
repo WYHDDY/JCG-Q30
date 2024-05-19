@@ -12,6 +12,7 @@
 
 dir="package/network/services/dnsmasq/files/dhcp.conf"
 sed -i 's/Os/O2/g' include/target.mk
+sed -i 's/192.168.2.1/10.0.0.1/g' package/base-files/files/bin/config_generate
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 sed -i 's/ImmortalWrt-2.4G/WYH-WIFI2.4G/g' package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
 sed -i 's/ImmortalWrt-5G/WYH-WIFI/g' package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
