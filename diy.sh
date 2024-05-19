@@ -24,6 +24,8 @@ sed -i 's/8000/0/g' $dir
 sed -i 's/100/2/g' $dir
 sed -i 's/150/48/g' $dir
 sed -i 's/12h/6h/g' $dir
+rm -rf feeds/luci/applications/luci-app-smartdns
+rm -rf feeds/packages/net/smartdns
 git clone https://github.com/sirpdboy/luci-app-ddns-go.git  package/new/ddns-go
 git clone https://github.com/pymumu/luci-app-smartdns.git feeds/luci/applications/luci-app-smartdns
 git clone https://github.com/pymumu/openwrt-smartdns.git feeds/packages/net/smartdns
