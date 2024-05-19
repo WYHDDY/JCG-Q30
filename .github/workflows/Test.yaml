@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://gitee.com/wyhaaa/mt7981
+  REPO_URL: https://gitee.com/wyhaaa/7981.git
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: test.config
