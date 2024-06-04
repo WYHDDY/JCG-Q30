@@ -15,7 +15,7 @@ sed -i 's/100/2/g'   $dir
 sed -i 's/150/88/g'  $dir
 sed -i 's/12h/6h/g'  $dir
 sed -i "14a\option sequential_ip 1" $dir
-
+sed -i 's/$(VERSION_DIST_SANITIZED)-$(IMG_PREFIX_VERNUM)$(IMG_PREFIX_VERCODE)$(IMG_PREFIX_EXTRA)$(BOARD)$(if $(SUBTARGET),-$(SUBTARGET))/$(shell date +%Y.%m.%d)/g' include/image.mk
 rm -rf feeds/luci/applications/luci-app-smartdns
 rm -rf feeds/luci/applications/luci-app-ddns-go
 rm -rf feeds/packages/net/smartdns
