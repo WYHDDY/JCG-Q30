@@ -8,11 +8,11 @@ on:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://gitee.com/wyhaaa/7981.git
+  REPO_URL: https://github.com/x-wrt/x-wrt.git
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: test.config
-  DIY_SH: diy.sh
+  CONFIG_FILE: wrt.config
+  DIY_SH: wrt.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
