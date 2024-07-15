@@ -7,7 +7,7 @@ sed -i 's/ImmortalWrt-2.4G/WYH-WIFI2.4G/g' package/mtk/applications/mtwifi-cfg/f
 sed -i 's/ImmortalWrt-5G/WYH-WIFI/g' package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
 sed -i 's/MT7981_AX3000_2.4G/WYH-WIFI2.4G/g' package/mtk/drivers/wifi-profile/files/mt7981/mt7981.dbdc.b0.dat
 sed -i 's/MT7981_AX3000_5G/WYH-WIFI/g' package/mtk/drivers/wifi-profile/files/mt7981/mt7981.dbdc.b1.dat
-sed -i 's/$(VERSION_DIST_SANITIZED)-$(IMG_PREFIX_VERNUM)$(IMG_PREFIX_VERCODE)$(IMG_PREFIX_EXTRA)$(BOARD)$(if $(SUBTARGET),-$(SUBTARGET))/$(shell date +%Y-%m-%d)/g' include/image.mk
+sed -i 's/$(VERSION_DIST_SANITIZED)-$(VERSION_DATE)-$(VERSION_FLAG)-$(IMG_PREFIX_VERNUM)$(IMG_PREFIX_VERCODE)$(IMG_PREFIX_EXTRA)$(BOARD)$(if $(SUBTARGET),-$(SUBTARGET))/$(shell date +%Y-%m-%d)/g' include/image.mk
 sed -i "14a\option sequential_ip 1" >> $dir $dir
 sed -i 's/3600/0/g' $dir
 sed -i 's/8000/0/g' $dir
