@@ -1,5 +1,4 @@
-
-name: wrt
+name: 21.02
 
 permissions: write-all
 
@@ -8,11 +7,11 @@ on:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://github.com/x-wrt/x-wrt.git
+  REPO_URL: https://github.com/NekokeCore/immortalwrt-mt798x.git
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: wrt.config
-  DIY_SH: wrt.sh
+  CONFIG_FILE: n.config
+  DIY_SH: n.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
