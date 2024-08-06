@@ -7,8 +7,8 @@ on:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://github.com/NekokeCore/immortalwrt-mt798x.git
-  REPO_BRANCH: openwrt-21.02
+  REPO_URL: https://gitee.com/wyhaaa/mt798-x.git
+  REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: n.config
   DIY_SH: n.sh
